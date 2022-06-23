@@ -1,0 +1,165 @@
+// Name:            Card
+// Description:     Component to create boxed content containers
+//
+// Component:       `uk-card`
+//
+// Modifiers:       `uk-card-tertiary`
+//                  `uk-card-quaternary`
+//                  `uk-card-quinary`
+//                  `uk-card-senary`
+//
+// Uses:            `uk-grid-stack`
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@card-tertiary-background:                      @global-tertiary-background;
+@card-tertiary-color:                           @global-inverse-color;
+@card-tertiary-title-color:                     @card-tertiary-color;
+@card-tertiary-hover-background:                darken(@global-tertiary-background, 5%);
+@card-tertiary-color-mode:                      light;
+
+@card-quaternary-background:                    @global-quaternary-background;
+@card-quaternary-color:                         @global-inverse-color;
+@card-quaternary-title-color:                   @card-quaternary-color;
+@card-quaternary-hover-background:              darken(@global-quaternary-background, 5%);
+@card-quaternary-color-mode:                    light;
+
+@card-quinary-background:                       @global-quinary-background;
+@card-quinary-color:                            @global-inverse-color;
+@card-quinary-title-color:                      @card-quinary-color;
+@card-quinary-hover-background:                 darken(@global-quinary-background, 5%);
+@card-quinary-color-mode:                       light;
+
+@card-senary-background:                        @global-senary-background;
+@card-senary-color:                             @global-inverse-color;
+@card-senary-title-color:                       @card-senary-color;
+@card-senary-hover-background:                  darken(@card-senary-background, 5%);
+@card-senary-color-mode:                        light;
+
+/* Style modifiers
+ ========================================================================== */
+
+/*
+ * Tertiary
+ */
+
+.uk-card-tertiary {
+  background-color: @card-tertiary-background;
+  color: @card-tertiary-color;
+  .hook-card-tertiary();
+}
+
+.uk-card-tertiary .uk-card-title {
+  color: @card-tertiary-title-color;
+  .hook-card-tertiary-title();
+}
+
+.uk-card-tertiary.uk-card-hover:hover {
+  background-color: @card-tertiary-hover-background;
+  .hook-card-tertiary-hover();
+}
+
+// Color Mode
+.uk-card-tertiary.uk-card-body:extend(.uk-light all) when (@card-tertiary-color-mode = light) {}
+.uk-card-tertiary > :not([class*='uk-card-media']):extend(.uk-light all) when (@card-tertiary-color-mode = light) {}
+.uk-card-tertiary.uk-card-body:extend(.uk-dark all) when (@card-tertiary-color-mode = dark) {}
+.uk-card-tertiary > :not([class*='uk-card-media']):extend(.uk-dark all) when (@card-tertiary-color-mode = dark) {}
+
+/*
+ * Quaternary
+ */
+
+.uk-card-quaternary {
+  background-color: @card-quaternary-background;
+  color: @card-quaternary-color;
+  .hook-card-quaternary();
+}
+
+.uk-card-quaternary .uk-card-title {
+  color: @card-quaternary-title-color;
+  .hook-card-quaternary-title();
+}
+
+.uk-card-quaternary.uk-card-hover:hover {
+  background-color: @card-quaternary-hover-background;
+  .hook-card-quaternary-hover();
+}
+
+// Color Mode
+.uk-card-quaternary.uk-card-body:extend(.uk-light all) when (@card-quaternary-color-mode = light) {}
+.uk-card-quaternary > :not([class*='uk-card-media']):extend(.uk-light all) when (@card-quaternary-color-mode = light) {}
+.uk-card-quaternary.uk-card-body:extend(.uk-dark all) when (@card-quaternary-color-mode = dark) {}
+.uk-card-quaternary > :not([class*='uk-card-media']):extend(.uk-dark all) when (@card-quaternary-color-mode = dark) {}
+
+/*
+ * Quinary
+ */
+
+.uk-card-quinary {
+  background-color: @card-quinary-background;
+  color: @card-quinary-color;
+  .hook-card-quinary();
+}
+
+.uk-card-quinary .uk-card-title {
+  color: @card-quinary-title-color;
+  .hook-card-quinary-title();
+}
+
+.uk-card-quinary.uk-card-hover:hover {
+  background-color: @card-quinary-hover-background;
+  .hook-card-quinary-hover();
+}
+
+// Color Mode
+.uk-card-quinary.uk-card-body:extend(.uk-light all) when (@card-quinary-color-mode = light) {}
+.uk-card-quinary > :not([class*='uk-card-media']):extend(.uk-light all) when (@card-quinary-color-mode = light) {}
+.uk-card-quinary.uk-card-body:extend(.uk-dark all) when (@card-quinary-color-mode = dark) {}
+.uk-card-quinary > :not([class*='uk-card-media']):extend(.uk-dark all) when (@card-quinary-color-mode = dark) {}
+
+/*
+ * Senary
+ */
+
+.uk-card-senary {
+  background-color: @card-senary-background;
+  color: @card-senary-color;
+  .hook-card-senary();
+}
+
+.uk-card-senary .uk-card-title {
+  color: @card-senary-title-color;
+  .hook-card-senary-title();
+}
+
+.uk-card-senary.uk-card-hover:hover {
+  background-color: @card-senary-hover-background;
+  .hook-card-senary-hover();
+}
+
+// Color Mode
+.uk-card-senary.uk-card-body:extend(.uk-light all) when (@card-senary-color-mode = light) {}
+.uk-card-senary > :not([class*='uk-card-media']):extend(.uk-light all) when (@card-senary-color-mode = light) {}
+.uk-card-senary.uk-card-body:extend(.uk-dark all) when (@card-senary-color-mode = dark) {}
+.uk-card-senary > :not([class*='uk-card-media']):extend(.uk-dark all) when (@card-senary-color-mode = dark) {}
+
+// Hooks
+// ========================================================================
+
+.hook-card-tertiary() {}
+.hook-card-tertiary-title() {}
+.hook-card-tertiary-hover() {}
+.hook-card-quaternary() {}
+.hook-card-quaternary-title() {}
+.hook-card-quaternary-hover() {}
+.hook-card-quinary() {}
+.hook-card-quinary-title() {}
+.hook-card-quinary-hover() {}
+.hook-card-senary() {}
+.hook-card-senary-title() {}
+.hook-card-senary-hover() {}
+

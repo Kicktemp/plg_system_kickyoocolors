@@ -1,0 +1,94 @@
+// Name:            Section
+// Description:     Component to create horizontal layout section
+//
+// Component:       `uk-section`
+//
+// Modifiers:       `uk-section-tertiary`
+//                  `uk-section-quaternary`
+//                  `uk-section-quinary`
+//                  `uk-section-senary`
+//
+// States:          `uk-preserve-color`
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@section-tertiary-background:                     @global-tertiary-background;
+@section-tertiary-color-mode:                     light;
+
+@section-quaternary-background:                   @global-quaternary-background;
+@section-quaternary-color-mode:                   light;
+
+@section-quinary-background:                      @global-quinary-background;
+@section-quinary-color-mode:                      light;
+
+@section-senary-background:                       @global-senary-background;
+@section-senary-color-mode:                       light;
+
+/* ========================================================================
+   Component: Section
+ ========================================================================== */
+
+/* Style modifiers
+ ========================================================================== */
+
+/*
+ * Tertiary
+ */
+
+.uk-section-tertiary {
+  background: @section-tertiary-background;
+  .hook-section-tertiary();
+}
+
+.uk-section-tertiary:not(.uk-preserve-color):extend(.uk-light all) when (@section-tertiary-color-mode = light) {}
+.uk-section-tertiary:not(.uk-preserve-color):extend(.uk-dark all) when (@section-tertiary-color-mode = dark) {}
+
+/*
+ * Quaternary
+ */
+
+.uk-section-quaternary {
+  background: @section-quaternary-background;
+  .hook-section-quaternary();
+}
+
+.uk-section-quaternary:not(.uk-preserve-color):extend(.uk-light all) when (@section-quaternary-color-mode = light) {}
+.uk-section-quaternary:not(.uk-preserve-color):extend(.uk-dark all) when (@section-quaternary-color-mode = dark) {}
+
+/*
+ * Quinary
+ */
+
+.uk-section-quinary {
+  background: @section-quinary-background;
+  .hook-section-quinary();
+}
+
+.uk-section-quinary:not(.uk-preserve-color):extend(.uk-light all) when (@section-quinary-color-mode = light) {}
+.uk-section-quinary:not(.uk-preserve-color):extend(.uk-dark all) when (@section-quinary-color-mode = dark) {}
+
+
+/*
+ * Senary
+ */
+
+.uk-section-senary {
+  background: @section-senary-background;
+  .hook-section-senary();
+}
+
+.uk-section-senary:not(.uk-preserve-color):extend(.uk-light all) when (@section-senary-color-mode = light) {}
+.uk-section-tertiary:not(.uk-preserve-color):extend(.uk-dark all) when (@section-tertiary-color-mode = dark) {}
+
+
+// Hooks
+// ========================================================================
+
+.hook-section-tertiary() {}
+.hook-section-quaternary() {}
+.hook-section-quinary() {}
+.hook-section-senary() {}

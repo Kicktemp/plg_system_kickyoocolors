@@ -1,0 +1,65 @@
+{
+  "sections": {
+    "styler": {
+      "components": {
+        "global": {
+          "name": "Global",
+          "general": true,
+          "groups": {
+
+          }
+        },
+        "inverse": {
+          "name": "Inverse",
+          "general": true,
+          "groups": {
+            "button tertiary": "@inverse-button-tertiary-*",
+            "button quaternary": "@inverse-button-quaternary-*",
+            "button quinary": "@inverse-button-quinary-*",
+            "button senary": "@inverse-button-senary-*"
+          }
+        },
+        "section": {
+          "name": "Section",
+          "groups": {
+            "tertiary": "@section-tertiary-*",
+            "quaternary": "@section-quaternary-*",
+            "quinary": "@section-quinary-*",
+            "senary": "@section-senary-*"
+          }
+        },
+        "card": {
+          "name": "Card",
+          "groups": {
+            "tertiary": "@card-tertiary-*",
+            "tertiary title": "@card-tertiary-title-*",
+            "quaternary": "@card-quaternary-*",
+            "quaternary title": "@card-quaternary-title-*",
+            "quinary": "@card-quinary-*",
+            "quinary title": "@card-quinary-title-*",
+            "senary": "@card-senary-*",
+            "senary title": "@card-senary-title-*"
+          }
+        },
+        "tile": {
+          "name": "Tile",
+          "groups": {
+            "tertiary": "@tile-tertiary-*",
+            "quaternary": "@tile-quaternary-*",
+            "quinary": "@tile-quinary-*",
+            "senary": "@tile-senary-*"
+          }
+        },
+        "button": {
+          "name": "Button",
+          "groups": {
+            "tertiary": "@button-tertiary-*",
+            "quaternary": "@button-quaternary-*",
+            "quinary": "@button-quinary-*",
+            "senary": "@button-senary-*"
+          }
+        }
+      }
+    }
+  }
+}

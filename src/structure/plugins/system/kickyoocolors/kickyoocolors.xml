@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.8" group="system" method="upgrade">
+	<name>PLG_SYSTEM_KICKYOOCOLORS</name>
+	<creationDate>[DATE]</creationDate>
+	<author>[AUTHOR]</author>
+	<authorEmail>[AUTHOR_EMAIL]</authorEmail>
+	<authorUrl>[AUTHOR_URL]</authorUrl>
+	<copyright>[COPYRIGHT]</copyright>
+	<license>[LICENSE]</license>
+	<version>[VERSION]</version>
+	<description>PLG_SYSTEM_KICKYOOCOLORS_XML_DESCRIPTION</description>
+
+	<!-- Scripts to run on installation -->
+	<scriptfile>script.php</scriptfile>
+
+	<!-- Plugin files -->
+	<files>
+		<filename plugin="kickyoocolors">kickyoocolors.php</filename>
+		<filename>bootstrap.php</filename>
+		<folder>assets</folder>
+		<folder>config</folder>
+		<folder>language</folder>
+		<folder>src</folder>
+	</files>
+
+	<!-- Config parameter -->
+	<config>
+	</config>
+
+	<!-- Update servers -->
+	<updateservers>
+		<server type="extension" priority="1" name="[PROJECT_NAME]">https://update.kicktemp.com/joomla/plugins/plg_system_kickyoocolors/update.xml</server>
+	</updateservers>
+</extension>

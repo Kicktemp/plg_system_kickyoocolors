@@ -1,0 +1,314 @@
+// Name:            Button
+// Description:     Styles for buttons
+//
+// Modifiers:       `uk-button-tertiary`
+//                  `uk-button-quaternary`
+//                  `uk-button-quinary`
+//                  `uk-button-senary`
+//
+// States:          `uk-active`
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@button-tertiary-background:                    @global-tertiary-background;
+@button-tertiary-color:                         @global-inverse-color;
+@button-tertiary-hover-background:              darken(@button-tertiary-background, 5%);
+@button-tertiary-hover-color:                   @global-inverse-color;
+@button-tertiary-active-background:             darken(@button-tertiary-background, 10%);
+@button-tertiary-active-color:                  @global-inverse-color;
+
+@button-quaternary-background:                  @global-quaternary-background;
+@button-quaternary-color:                       @global-inverse-color;
+@button-quaternary-hover-background:            darken(@button-quaternary-background, 5%);
+@button-quaternary-hover-color:                 @global-inverse-color;
+@button-quaternary-active-background:           darken(@button-quaternary-background, 10%);
+@button-quaternary-active-color:                @global-inverse-color;
+
+@button-quinary-background:                     @global-quinary-background;
+@button-quinary-color:                          @global-inverse-color;
+@button-quinary-hover-background:               darken(@button-quinary-background, 5%);
+@button-quinary-hover-color:                    @global-inverse-color;
+@button-quinary-active-background:              darken(@button-quinary-background, 10%);
+@button-quinary-active-color:                   @global-inverse-color;
+
+@button-senary-background:                      @global-senary-background;
+@button-senary-color:                           @global-inverse-color;
+@button-senary-hover-background:                darken(@button-senary-background, 5%);
+@button-senary-hover-color:                     @global-inverse-color;
+@button-senary-active-background:               darken(@button-senary-background, 10%);
+@button-senary-active-color:                    @global-inverse-color;
+
+/* Style modifiers
+ ========================================================================== */
+
+/*
+* Tertiary
+*/
+
+.uk-button-tertiary {
+  background-color: @button-tertiary-background;
+  color: @button-tertiary-color;
+  .hook-button-tertiary();
+}
+
+/* Hover */
+.uk-button-tertiary:hover {
+  background-color: @button-tertiary-hover-background;
+  color: @button-tertiary-hover-color;
+  .hook-button-tertiary-hover();
+}
+
+/* OnClick + Active */
+.uk-button-tertiary:active,
+.uk-button-tertiary.uk-active {
+  background-color: @button-tertiary-active-background;
+  color: @button-tertiary-active-color;
+  .hook-button-tertiary-active();
+}
+
+/*
+* Quaternary
+*/
+
+.uk-button-quaternary {
+  background-color: @button-quaternary-background;
+  color: @button-quaternary-color;
+  .hook-button-quaternary();
+}
+
+/* Hover */
+.uk-button-quaternary:hover {
+  background-color: @button-quaternary-hover-background;
+  color: @button-quaternary-hover-color;
+  .hook-button-quaternary-hover();
+}
+
+/* OnClick + Active */
+.uk-button-quaternary:active,
+.uk-button-quaternary.uk-active {
+  background-color: @button-quaternary-active-background;
+  color: @button-quaternary-active-color;
+  .hook-button-quaternary-active();
+}
+
+/*
+* Quinary
+*/
+
+.uk-button-quinary {
+  background-color: @button-quinary-background;
+  color: @button-quinary-color;
+  .hook-button-quinary();
+}
+
+/* Hover */
+.uk-button-quinary:hover {
+  background-color: @button-quinary-hover-background;
+  color: @button-quinary-hover-color;
+  .hook-button-quinary-hover();
+}
+
+/* OnClick + Active */
+.uk-button-quinary:active,
+.uk-button-quinary.uk-active {
+  background-color: @button-quinary-active-background;
+  color: @button-quinary-active-color;
+  .hook-button-quinary-active();
+}
+
+/*
+* Senary
+*/
+
+.uk-button-senary {
+  background-color: @button-senary-background;
+  color: @button-senary-color;
+  .hook-button-senary();
+}
+
+/* Hover */
+.uk-button-senary:hover {
+  background-color: @button-senary-hover-background;
+  color: @button-senary-hover-color;
+  .hook-button-senary-hover();
+}
+
+/* OnClick + Active */
+.uk-button-senary:active,
+.uk-button-senary.uk-active {
+  background-color: @button-senary-active-background;
+  color: @button-senary-active-color;
+  .hook-button-senary-active();
+}
+
+/*
+ * Disabled
+ * The same for all style modifiers
+ */
+.uk-button-tertiary:disabled,
+.uk-button-quaternary:disabled,
+.uk-button-quinary:disabled,
+.uk-button-senary:disabled {
+  background-color: @button-disabled-background;
+  color: @button-disabled-color;
+  .hook-button-disabled();
+}
+
+// Hooks
+// ========================================================================
+
+.hook-button-tertiary() {}
+.hook-button-tertiary-hover() {}
+.hook-button-tertiary-active() {}
+.hook-button-quaternary() {}
+.hook-button-quaternary-hover() {}
+.hook-button-quaternary-active() {}
+.hook-button-quinary() {}
+.hook-button-quinary-hover() {}
+.hook-button-quinary-active() {}
+.hook-button-senary() {}
+.hook-button-senary-hover() {}
+.hook-button-senary-active() {}
+
+// Inverse
+// ========================================================================
+
+@inverse-button-tertiary-background:              @inverse-global-tertiary-background;
+@inverse-button-tertiary-color:                   @inverse-global-inverse-color;
+@inverse-button-tertiary-hover-background:        darken(@inverse-button-tertiary-background, 5%);
+@inverse-button-tertiary-hover-color:             @inverse-global-inverse-color;
+@inverse-button-tertiary-active-background:       darken(@inverse-button-tertiary-background, 10%);
+@inverse-button-tertiary-active-color:            @inverse-global-inverse-color;
+
+@inverse-button-quinary-background:               @inverse-global-quinary-background;
+@inverse-button-quinary-color:                    @inverse-global-inverse-color;
+@inverse-button-quinary-hover-background:         darken(@inverse-button-quinary-background, 5%);
+@inverse-button-quinary-hover-color:              @inverse-global-inverse-color;
+@inverse-button-quinary-active-background:        darken(@inverse-button-quinary-background, 10%);
+@inverse-button-quinary-active-color:             @inverse-global-inverse-color;
+
+@inverse-button-quaternary-background:            @inverse-global-quaternary-background;
+@inverse-button-quaternary-color:                 @inverse-global-inverse-color;
+@inverse-button-quaternary-hover-background:      darken(@inverse-button-quaternary-background, 5%);
+@inverse-button-quaternary-hover-color:           @inverse-global-inverse-color;
+@inverse-button-quaternary-active-background:     darken(@inverse-button-quaternary-background, 10%);
+@inverse-button-quaternary-active-color:          @inverse-global-inverse-color;
+
+@inverse-button-senary-background:                @inverse-global-senary-background;
+@inverse-button-senary-color:                     @inverse-global-inverse-color;
+@inverse-button-senary-hover-background:          darken(@inverse-button-senary-background, 5%);
+@inverse-button-senary-hover-color:               @inverse-global-inverse-color;
+@inverse-button-senary-active-background:         darken(@inverse-button-senary-background, 10%);
+@inverse-button-senary-active-color:              @inverse-global-inverse-color;
+
+.hook-inverse() {
+
+  //
+  // Tertiary
+  //
+
+  .uk-button-tertiary {
+    background-color: @inverse-button-tertiary-background;
+    color: @inverse-button-tertiary-color;
+    .hook-inverse-button-tertiary();
+  }
+
+  .uk-button-tertiary:hover {
+    background-color: @inverse-button-tertiary-hover-background;
+    color: @inverse-button-tertiary-hover-color;
+    .hook-inverse-button-tertiary-hover();
+  }
+
+  .uk-button-tertiary:active,
+  .uk-button-tertiary.uk-active {
+    background-color: @inverse-button-tertiary-active-background;
+    color: @inverse-button-tertiary-active-color;
+    .hook-inverse-button-tertiary-active();
+  }
+
+  //
+  // Quaternary
+  //
+
+  .uk-button-quaternary {
+    background-color: @inverse-button-quaternary-background;
+    color: @inverse-button-quaternary-color;
+    .hook-inverse-button-quaternary();
+  }
+
+  .uk-button-quaternary:hover {
+    background-color: @inverse-button-quaternary-hover-background;
+    color: @inverse-button-quaternary-hover-color;
+    .hook-inverse-button-quaternary-hover();
+  }
+
+  .uk-button-quaternary:active,
+  .uk-button-quaternary.uk-active {
+    background-color: @inverse-button-quaternary-active-background;
+    color: @inverse-button-quaternary-active-color;
+    .hook-inverse-button-quaternary-active();
+  }
+
+  //
+  // Quinary
+  //
+
+  .uk-button-quinary {
+    background-color: @inverse-button-quinary-background;
+    color: @inverse-button-quinary-color;
+    .hook-inverse-button-quinary();
+  }
+
+  .uk-button-quinary:hover {
+    background-color: @inverse-button-quinary-hover-background;
+    color: @inverse-button-quinary-hover-color;
+    .hook-inverse-button-quinary-hover();
+  }
+
+  .uk-button-quinary:active,
+  .uk-button-quinary.uk-active {
+    background-color: @inverse-button-quinary-active-background;
+    color: @inverse-button-quinary-active-color;
+    .hook-inverse-button-quinary-active();
+  }
+
+  //
+  // Senary
+  //
+
+  .uk-button-senary {
+    background-color: @inverse-button-senary-background;
+    color: @inverse-button-senary-color;
+    .hook-inverse-button-senary();
+  }
+
+  .uk-button-senary:hover {
+    background-color: @inverse-button-senary-hover-background;
+    color: @inverse-button-senary-hover-color;
+    .hook-inverse-button-senary-hover();
+  }
+
+  .uk-button-senary:active,
+  .uk-button-senary.uk-active {
+    background-color: @inverse-button-senary-active-background;
+    color: @inverse-button-senary-active-color;
+    .hook-inverse-button-senary-active();
+  }
+}
+
+.hook-inverse-button-tertiary() {}
+.hook-inverse-button-tertiary-hover() {}
+.hook-inverse-button-tertiary-active() {}
+.hook-inverse-button-quaternary() {}
+.hook-inverse-button-quaternary-hover() {}
+.hook-inverse-button-quaternary-active() {}
+.hook-inverse-button-quinary() {}
+.hook-inverse-button-quinary-hover() {}
+.hook-inverse-button-quinary-active() {}
+.hook-inverse-button-senary() {}
+.hook-inverse-button-senary-hover() {}
+.hook-inverse-button-senary-active() {}

@@ -1,0 +1,132 @@
+// Name:            Tile
+// Description:     Component to create tiled boxes
+//
+// Component:       `uk-tile`
+//
+// Modifiers:       `uk-tile-tertiary`
+//                  `uk-tile-quaternary`
+//                  `uk-tile-quinary`
+//                  `uk-tile-senary`
+//
+//
+// States:          `uk-preserve-color`
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+@tile-tertiary-background:                     @global-tertiary-background;
+@tile-tertiary-hover-background:               darken(@tile-tertiary-background, 2%);
+@tile-tertiary-color-mode:                     light;
+
+@tile-quaternary-background:                   @global-quaternary-background;
+@tile-quaternary-hover-background:             darken(@tile-quaternary-background, 2%);
+@tile-quaternary-color-mode:                   light;
+
+@tile-quinary-background:                      @global-quinary-background;
+@tile-quinary-hover-background:                darken(@tile-quinary-background, 2%);
+@tile-quinary-color-mode:                      light;
+
+@tile-senary-background:                       @global-senary-background;
+@tile-senary-hover-background:                 darken(@tile-senary-background, 2%);
+@tile-senary-color-mode:                       light;
+
+
+/* Style modifiers
+ ========================================================================== */
+
+/*
+ * Tertiary
+ */
+
+.uk-tile-tertiary {
+  background-color: @tile-tertiary-background;
+  .hook-tile-tertiary();
+}
+
+.uk-tile-tertiary.uk-tile-hover:hover {
+  .hook-tile-tertiary-hover();
+}
+
+// Color Mode
+.uk-tile-tertiary:not(.uk-preserve-color):extend(.uk-light all) when (@tile-tertiary-color-mode = light) {}
+.uk-tile-tertiary:not(.uk-preserve-color):extend(.uk-dark all) when (@tile-tertiary-color-mode = dark) {}
+
+/*
+ * Quaternary
+ */
+
+.uk-tile-quaternary {
+  background-color: @tile-quaternary-background;
+  .hook-tile-quaternary();
+}
+
+.uk-tile-quaternary.uk-tile-hover:hover {
+  .hook-tile-quaternary-hover();
+}
+
+// Color Mode
+.uk-tile-quaternary:not(.uk-preserve-color):extend(.uk-light all) when (@tile-quaternary-color-mode = light) {}
+.uk-tile-quaternary:not(.uk-preserve-color):extend(.uk-dark all) when (@tile-quaternary-color-mode = dark) {}
+
+/*
+ * Quinary
+ */
+
+.uk-tile-quinary {
+  background-color: @tile-quinary-background;
+  .hook-tile-quinary();
+}
+
+.uk-tile-quinary.uk-tile-hover:hover {
+  .hook-tile-quinary-hover();
+}
+
+// Color Mode
+.uk-tile-quinary:not(.uk-preserve-color):extend(.uk-light all) when (@tile-quinary-color-mode = light) {}
+.uk-tile-quinary:not(.uk-preserve-color):extend(.uk-dark all) when (@tile-quinary-color-mode = dark) {}
+
+/*
+ * Senary
+ */
+
+.uk-tile-senary {
+  background-color: @tile-senary-background;
+  .hook-tile-senary();
+}
+
+.uk-tile-senary.uk-tile-hover:hover {
+  .hook-tile-senary-hover();
+}
+
+// Color Mode
+.uk-tile-senary:not(.uk-preserve-color):extend(.uk-light all) when (@tile-senary-color-mode = light) {}
+.uk-tile-senary:not(.uk-preserve-color):extend(.uk-dark all) when (@tile-senary-color-mode = dark) {}
+
+// Hooks
+// ========================================================================
+.hook-tile-tertiary() {}
+.hook-tile-tertiary-hover() {}
+.hook-tile-quaternary() {}
+.hook-tile-quaternary-hover() {}
+.hook-tile-quinary() {}
+.hook-tile-quinary-hover() {}
+.hook-tile-senary() {}
+.hook-tile-senary-hover() {}
+
+.hook-tile-tertiary-hover-hover() when not (@tile-tertiary-hover-background = inherit) {
+  background-color: @tile-tertiary-hover-background;
+}
+
+.hook-tile-quaternary-hover-hover() when not (@tile-quaternary-hover-background = inherit) {
+  background-color: @tile-quaternary-hover-background;
+}
+
+.hook-tile-quinary-hover-hover() when not (@tile-quinary-hover-background = inherit) {
+  background-color: @tile-quinary-hover-background;
+}
+
+.hook-tile-senary-hover-hover() when not (@tile-senary-hover-background = inherit) {
+  background-color: @tile-senary-hover-background;
+}
