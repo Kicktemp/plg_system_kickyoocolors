@@ -1,5 +1,8 @@
 # Kick Yoo Colors
 
+> **Note**
+> After the installation you have to recompile YOOtheme once, so that the changes take effect in the CSS
+ 
 ## Description
 Sometimes you need more color options than primary and secondary in YOOtheme Pro. With this plugin you get four more options that can be fully styled for each UIkit component.
 
