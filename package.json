@@ -1,7 +1,7 @@
 {
   "name": "KickYooColors",
   "description": "",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "boilerplate": "cross-env NODE_ENV=development gulp boilerplate",
     "build": "cross-env NODE_ENV=production gulp build",
