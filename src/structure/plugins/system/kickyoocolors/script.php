@@ -20,6 +20,15 @@ use Joomla\CMS\Factory;
  */
 class plgSystemKickYooColorsInstallerScript
 {
+	public function __construct()
+	{
+		// Define the minimum versions to be supported.
+		$this->minimumJoomla = '4.0';
+		$this->minimumPhp    = '7.2.5';
+
+		$this->dir = __DIR__;
+	}
+
 	/**
 	 * Called on installation
 	 *

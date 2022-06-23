@@ -8,12 +8,10 @@
 	<copyright>[COPYRIGHT]</copyright>
 	<license>[LICENSE]</license>
 	<version>[VERSION]</version>
+	<changelogurl>https://raw.githubusercontent.com/Kicktemp/plg_system_kickyoocolors/main/changelog.xml</changelogurl>
 	<description>PLG_SYSTEM_KICKYOOCOLORS_XML_DESCRIPTION</description>
-
-	<!-- Scripts to run on installation -->
+	<namespace path="src">Kicktemp\Plugin\System\Janolaw</namespace>
 	<scriptfile>script.php</scriptfile>
-
-	<!-- Plugin files -->
 	<files>
 		<filename plugin="kickyoocolors">kickyoocolors.php</filename>
 		<filename>bootstrap.php</filename>
@@ -22,13 +20,11 @@
 		<folder>language</folder>
 		<folder>src</folder>
 	</files>
-
-	<!-- Config parameter -->
 	<config>
 	</config>
-
-	<!-- Update servers -->
 	<updateservers>
-		<server type="extension" priority="1" name="[PROJECT_NAME]">https://update.kicktemp.com/joomla/plugins/plg_system_kickyoocolors/update.xml</server>
+		<server type="extension" priority="1" name="[PROJECT_NAME]">
+			https://raw.githubusercontent.com/Kicktemp/plg_system_kickyoocolors/main/update.xml
+		</server>
 	</updateservers>
 </extension>
