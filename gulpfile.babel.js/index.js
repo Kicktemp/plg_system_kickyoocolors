@@ -16,7 +16,9 @@ import { cleaner } from './tasks/clean';
 import { copyPackageFiles } from './tasks/copy-packagefiles';
 import { buildArchives } from './tasks/archives';
 import { release } from './tasks/release';
+import { updateXML } from './tasks/updatexml';
 
+exports.updateXML = updateXML;
 exports.boilerplate = boilerplate;
 exports.watch = watch;
 exports.build = build;
