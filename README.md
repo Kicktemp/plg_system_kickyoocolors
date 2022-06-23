@@ -1,7 +1,7 @@
 # Kick Yoo Colors
 
 ## Description
-Sometimes you need more colour options in YOOtheme Pro besides primary, secondary. With this plugin you get four more options that can be completely styled for each UIkit component.
+Sometimes you need more color options than primary and secondary in YOOtheme Pro. With this plugin you get four more options that can be fully styled for each UIkit component.
 
 This Plugin adds 4 more Options to YOOtheme Pro: 
 - tertiary
@@ -18,7 +18,7 @@ You can use the YOOtheme Style to customize each variable for:
  - text
  - tile
 
-Which are Elements effected:
+Which elements are affected:
 - button_item
 - column
 - description_list
@@ -36,8 +36,3 @@ Which are Elements effected:
 
 ### More Elements
 If you miss an element, feel free to write to an issue
-
- 
-
-
-
