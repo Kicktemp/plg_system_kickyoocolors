@@ -2,13 +2,6 @@
   "sections": {
     "styler": {
       "components": {
-        "global": {
-          "name": "Global",
-          "general": true,
-          "groups": {
-
-          }
-        },
         "inverse": {
           "name": "Inverse",
           "general": true,
