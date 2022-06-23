@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<updates>
+  <update>
+    <name>System - KickYooColors</name>
+    <description>KickYooColors Plugin</description>
+    <element>kickyoocolors</element>
+    <type>plugin</type>
+    <folder>system</folder>
+    <client>site</client>
+    <section>updates</section>
+    <version>1.0.1</version>
+    <changelogurl>https://raw.githubusercontent.com/Kicktemp/plg_system_kickyoocolors/master/changelog.xml</changelogurl>
+    <infourl title="KickYooColors Plugin">https://github.com/Kicktemp/plg_system_kickyoocolors/</infourl>
+    <downloads>
+      <downloadurl type="full" format="zip"><![CDATA[https://github.com/Kicktemp/plg_system_kickyoocolors/releases/download/v1.0.1/plg_system_kickyoocolors_1.0.1.zip]]></downloadurl>
+    </downloads>
+    <sha256>33869fcb02f5aef6269dc7d5de76e19577767ca871f65b7c6aec3e7d2099fc27</sha256>
+    <sha384>8ffbe2ce3c23cfdddb7200c8f5e45cbe9c818dd5880a527aef19147a64839c169028f12d3d2300bdef8568a68c0ebabd</sha384>
+    <sha512>9f709e1c1dfbd061eaccbd56d97b03ec8dc6dab001f616a54a2a4e29feb5f5e0d1788febc2d08efb60fc5002f48feacaab56c112b6e6fa65cb08cae0d6e2b69c</sha512>
+    <tags>
+      <tag>stable</tag>
+    </tags>
+    <maintainer>Kicktemp GmbH</maintainer>
+    <maintainerurl>https://kicktemp.com</maintainerurl>
+    <php_minimum>7.2.5</php_minimum>
+    <supported_databases mysql="5.6" mariadb="10.1"/>
+    <targetplatform name="joomla" version="4.[01]"/>
+  </update>
+</updates>
