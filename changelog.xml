@@ -1,0 +1,24 @@
+<changelogs>
+	<changelog>
+		<element>kickyoocolors</element>
+		<type>plugin</type>
+		<version>1.0.1</version>
+		<fix>
+			<item>revoke update url</item>
+		</fix>
+	</changelog>
+	<changelog>
+		<element>kickyoocolors</element>
+		<type>plugin</type>
+		<version>1.0.0</version>
+		<security>
+			<item><![CDATA[<p>No security issues.</p>]]></item>
+		</security>
+		<addition>
+			<item>add Joomla 4 support</item>
+		</addition>
+		<note>
+			<item>change minimum Joomla version to 4.0.0 and PHP minimum to 7.2.5</item>
+		</note>
+	</changelog>
+</changelogs>
